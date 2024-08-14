@@ -1,0 +1,54 @@
+/* MyOrders.css */
+
+.my-orders-container {
+    padding: 20px;
+}
+
+.orders-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.status-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.status-icon {
+    font-size: 24px;
+    color: #aaa;
+}
+
+.status-icon.active {
+    color: #4caf50;
+}
+
+.status-icon:before {
+    content: '';
+    display: block;
+    height: 1px;
+    background: #aaa;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.status-icon:first-child:before {
+    display: none;
+}
+
+.order-details p {
+    margin: 5px 0;
+}

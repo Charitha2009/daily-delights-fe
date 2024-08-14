@@ -1,0 +1,51 @@
+/* Home.css */
+.home-container {
+    display: flex;
+    height: calc(100vh - 60px); /* Adjust height considering the navbar height */
+  }
+  
+  .left-half, .right-half {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+  }
+  
+  .left-half {
+    /* background-color: #f8f9fa; */
+    margin: 5vh;
+  }
+  
+  .right-half {
+    /* background-color: #e9ecef; */
+    background-image: url('../Images/message_template.jpeg');
+    background-size: cover;  /* Ensures the image covers the entire div */
+    background-position: center;  /* Centers the image */
+    height: 50vh;
+    width: 50vw;
+    margin-top: 12vh;
+    margin-right: 5vw;
+    /* margin-bottom: 6vh; */
+    font-family: cursive;
+    font-size: 20px;
+    padding: 5vw;
+    line-height: 1.0;
+    border-radius: 5%;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
